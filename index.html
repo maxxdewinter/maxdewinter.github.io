@@ -1,85 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Max DeWinter</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-
     body {
-
       margin: 0;
-
-      font-family: 'Helvetica Neue', sans-serif;
-
+      padding: 0;
       background: #0a0a0a;
-
-      color: #ffffff;
-
+      font-family: 'Inter', sans-serif;
+      color: #fff;
       display: flex;
-
       flex-direction: column;
-
       align-items: center;
-
       justify-content: center;
-
       height: 100vh;
-
       text-align: center;
-
     }
-
     h1 {
-
       font-size: 3rem;
-
+      font-weight: 700;
       margin-bottom: 0.2em;
-
     }
-
     p {
-
       font-size: 1.2rem;
-
-      color: #cccccc;
-
+      color: #aaa;
+      margin-bottom: 2em;
     }
-
-    a {
-
-      color: #00ffc8;
-
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+    .button {
+      padding: 0.8em 1.6em;
+      background: linear-gradient(135deg, #00ffc8, #0077ff);
+      color: #000;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
       text-decoration: none;
-
-      font-weight: bold;
-
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    a:hover {
-
-      text-decoration: underline;
-
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 255, 200, 0.6);
     }
-
+    .socials {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+    .socials a {
+      color: #00ffc8;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #ffffff;
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .button {
+        font-size: 0.9rem;
+        padding: 0.6em 1.2em;
+      }
+    }
   </style>
-
 </head>
-
 <body>
-
   <h1>Max DeWinter</h1>
-
   <p>Work in progress...</p>
 
-  <p>Contact: <a href="maxdewinter03@gmail.com">maxdewinter03@gmail.com</a></p>
+  <div class="buttons">
+    <a href="#" class="button">Resume</a>
+    <a href="#" class="button">Projects</a>
+    <a href="mailto:maxdewinter03@gmail.com" class="button">Contact</a>
+  </div>
 
+  <div class="socials">
+    <a href="#" title="Instagram">Instagram</a>
+    <a href="#" title="Twitter">Twitter</a>
+    <a href="#" title="GitHub">GitHub</a>
+    <a href="#" title="LinkedIn">LinkedIn</a>
+  </div>
 </body>
-
 </html>
